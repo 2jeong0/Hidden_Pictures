@@ -87,12 +87,12 @@ button:disabled{background:#8aa9ac;cursor:default}
 /* ============ 설정 (여기만 수정하세요) ============ */
 const CONFIG = {
   IMAGE: "hidden.jpg",          // 같은 폴더에 둘 이미지 파일명
-  ENDPOINT: "https://script.google.com/macros/s/AKfycbzNsabSzWgwRJWWYOj1fi5Kx1Jn4jhGs8Jy2SMkoNPEXeyGlE3G5cje7V0BcIsUiYf1PQ/exec",  // Google Apps Script 웹앱 URL
-  PENALTY_MS: 0,                // 오답 클릭 1회당 가산 시간(ms). 예: 3000 = 3초
+  ENDPOINT: "AKfycbzNsabSzWgwRJWWYOj1fi5Kx1Jn4jhGs8Jy2SMkoNPEXeyGlE3G5cje7V0BcIsUiYf1PQ/exec",  // Google Apps Script 웹앱 URL
+  PENALTY_MS: 1000,                // 오답 클릭 1회당 가산 시간(ms). 예: 3000 = 3초
   // x, y = 이미지 가로/세로 대비 중심 위치(%), r = 정답 인정 반경(이미지 가로 대비 %)
   // 실제 좌표는 주소 끝에 ?admin=1 을 붙여 이미지를 클릭하면 확인할 수 있습니다.
   TARGETS: [
-    { name: "청진기",   x: 20, y: 30, r: 4 },
+    { name: "청진기1",   x: 20, y: 30, r: 4 },
     { name: "마스크",   x: 70, y: 25, r: 4 },
     { name: "주사기",   x: 45, y: 60, r: 4 },
     { name: "손소독제", x: 82, y: 72, r: 4 },
